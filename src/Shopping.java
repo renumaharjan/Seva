@@ -12,10 +12,11 @@ public class Shopping {
     //static WebDriver driver = new ChromeDriver();
 
     @BeforeMethod
-    void init() {
+    void init()
+    {
         System.setProperty("webdriver.gecko.driver", "/Users/renumaharjan/Workspace/geckodriver");
         //System.setProperty("webdriver.chrome.driver", "/Users/renumaharjan/Workspace/chromedriver");
-        driver.get("http://prestashop.rayaxis.com/index.php?controller=authentication&back=my-account");
+        driver.get("http://automationpractice.com/index.php?controller=my-account");
         driver.manage().window().maximize();
         System.out.println("launching browser");
         driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
