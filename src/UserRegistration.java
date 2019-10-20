@@ -26,7 +26,7 @@ public class UserRegistration {
     //User registration
     @Test
     void registration() {
-        for (int i = 100; i <102 ; i++) {
+        for (int i = 101; i < 105 ; i++) {
             String email = "mesmerizektm" + i + "@gmail.com";
             //enter email address
             driver.findElement(By.cssSelector("#email_create")).sendKeys(email);
